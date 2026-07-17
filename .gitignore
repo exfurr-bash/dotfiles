@@ -1,0 +1,15 @@
+# Ignorar chaves privadas SSH
+.ssh/id_*
+.ssh/agent/
+
+# Cache e histórico
+.zsh/.zsh_history
+.bash_history
+.zcompdump
+.wget-hsts
+.python_history
+.cache/
+.local/share/
+
+# Diretórios temporários
+.var/

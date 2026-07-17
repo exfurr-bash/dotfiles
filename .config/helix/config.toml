@@ -1,0 +1,29 @@
+theme = "tokyonight"
+
+[editor]
+line-number = "relative"
+cursorline = true
+color-modes = true
+completion-trigger-len = 1
+true-color = true
+bufferline = "multiple"
+auto-pairs = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["mode", "spacer", "version-control"]
+right = ["diagnostics", "selections-count", "position-percentage", "file-encoding", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[keys.normal]
+"z" = { "z" = "center_view", "t" = "scroll_surround" }
+
+[keys.insert]
+"C-s" = "commit_undo_checkpoint"

@@ -1,0 +1,23 @@
+# Case-insensitive tab completion
+set completion-ignore-case on
+
+# Show all completions on first tab
+set show-all-if-ambiguous on
+
+# Colors in tab completion
+set colored-stats on
+set colored-completion-prefix on
+
+# Mark symlinked directories with @
+set mark-symlinked-directories on
+
+# Cycle through completions with TAB
+TAB: menu-complete
+
+# History search with up/down arrows
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+# Enable vi mode (comment out for emacs mode)
+# set editing-mode vi
+# set keymap vi

@@ -1,0 +1,97 @@
+# Tokyo Night theme for Starship
+format = """\
+[](#7dcfff)\
+$os\
+$username\
+[](bg:#1a1b26 fg:#7dcfff)\
+$directory\
+$git_branch\
+$git_status\
+$fill\
+$nix_shell\
+$nodejs\
+$rust\
+$python\
+$elixir\
+$cmd_duration\
+$line_break\
+$character\
+"""
+
+palette = "tokyo_night"
+
+[palettes.tokyo_night]
+blue = "#7aa2f7"
+cyan = "#7dcfff"
+green = "#9ece6a"
+magenta = "#bb9af7"
+orange = "#ff9e64"
+peach = "#f7768e"
+purple = "#9d7cd8"
+red = "#f7768e"
+yellow = "#e0af68"
+white = "#c0caf5"
+gray = "#414868"
+bg = "#1a1b26"
+
+[os]
+disabled = false
+style = "bg:#1d202f fg:#c0caf5"
+format = "[ $symbol]($style)"
+[os.symbols]
+Android = " "
+
+[username]
+show_always = true
+style_user = "bg:#7aa2f7 fg:#1a1b26"
+format = "[ $user ]($style)"
+
+[directory]
+style = "bg:#1a1b26 fg:#7dcfff"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+style = "bg:#1a1b26 fg:#bb9af7"
+format = "[ $symbol$branch ]($style)"
+
+[git_status]
+style = "bg:#1a1b26 fg:#f7768e"
+format = "[$all_status$ahead_behind ]($style)"
+conflicted = "🏳"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕${count}"
+
+[nodejs]
+format = "[ $symbol($version )]($style)"
+style = "bg:#1a1b26 fg:#9ece6a"
+
+[rust]
+format = "[ $symbol($version )]($style)"
+style = "bg:#1a1b26 fg:#e0af68"
+
+[python]
+format = "[ $symbol($version )]($style)"
+style = "bg:#1a1b26 fg:#ff9e64"
+
+[elixir]
+format = "[ $symbol($version )]($style)"
+style = "bg:#1a1b26 fg:#bb9af7"
+
+[nix_shell]
+format = "[ $symbol$state ]($style)"
+style = "bg:#1a1b26 fg:#7dcfff"
+
+[cmd_duration]
+format = "[ ⏱ $duration ]($style)"
+style = "bg:#1a1b26 fg:#e0af68"
+
+[fill]
+style = "bg:#1a1b26 fg:#c0caf5"
+
+[character]
+success_symbol = "[ ](bold fg:#7aa2f7)"
+error_symbol = "[ ](bold fg:#f7768e)"
+vimcmd_symbol = "[ ](bold fg:#bb9af7)"

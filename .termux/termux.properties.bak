@@ -1,0 +1,34 @@
+# General
+terminal-transcript-rows = 5000
+hide-soft-keyboard-on-startup = true
+disable-terminal-session-change-toast = true
+
+# Cursor
+terminal-cursor-blink-rate = 500
+terminal-cursor-style = block
+
+# Extra keys
+extra-keys-style = arrows-only
+extra-keys = [ \
+  ['ESC', '/', '-', 'HOME', 'UP', 'END', 'PGUP', '|'], \
+  ['TAB', 'CTRL', 'ALT', 'LEFT', 'DOWN', 'RIGHT', 'PGDN', 'KEYBOARD'] \
+]
+
+# Colors
+use-black-ui = true
+
+# Back key
+back-key = escape
+
+# Bell
+bell-character = beep
+
+# Margins
+terminal-margin-horizontal = 3
+terminal-margin-vertical = 0
+
+# Shortcuts
+shortcut.create-session = ctrl + t
+shortcut.next-session = ctrl + 2
+shortcut.previous-session = ctrl + 1
+shortcut.rename-session = ctrl + n

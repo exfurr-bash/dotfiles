@@ -1,0 +1,43 @@
+[manager]
+prepend_icon_style = "Exact"
+cwd_color = "#7aa2f7"
+cwd_icon = ""
+
+[manager.preview]
+selected = { fg = "#7dcfff", bg = "#1f2335" }
+
+[manager.synta]
+dotfile = { fg = "#565f89" }
+regular = { fg = "#c0caf5" }
+directory = { fg = "#7aa2f7", bold = true }
+symlink = { fg = "#bb9af7" }
+executable = { fg = "#f7768e", bold = true }
+archive = { fg = "#e0af68" }
+image = { fg = "#bb9af7" }
+video = { fg = "#bb9af7" }
+audio = { fg = "#f7768e" }
+text = { fg = "#c0caf5" }
+
+[status]
+separator_open = ""
+separator_close = ""
+separator_style = { fg = "#7aa2f7", bg = "#1a1b26" }
+
+[status.mode]
+normal = { fg = "#1a1b26", bg = "#7aa2f7", bold = true }
+select = { fg = "#1a1b26", bg = "#bb9af7", bold = true }
+unset = { fg = "#1a1b26", bg = "#f7768e", bold = true }
+
+[input]
+border = { fg = "#7aa2f7" }
+selected = { fg = "#1a1b26", bg = "#7aa2f7" }
+
+[select]
+border = { fg = "#bb9af7" }
+active = { fg = "#1a1b26", bg = "#bb9af7" }
+inactive = { fg = "#c0caf5" }
+
+[which]
+cols = [
+  { on = { fg = "#1a1b26", bg = "#7aa2f7" }, exec = { fg = "#1a1b26", bg = "#e0af68" } },
+]

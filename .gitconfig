@@ -1,0 +1,31 @@
+[user]
+	name = Termux User
+	email = termux@localhost
+
+[core]
+	editor = nvim
+	pager = bat
+
+[init]
+	defaultBranch = main
+
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	lg = log --oneline --graph --decorate --all
+	df = diff
+	l = log --oneline --graph
+	last = log -1 HEAD
+	amend = commit --amend
+	undo = reset HEAD~1
+
+[color]
+	ui = auto
+
+[pull]
+	rebase = true
+
+[push]
+	autoSetupRemote = true

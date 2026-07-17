@@ -1,0 +1,4 @@
+# Ignorar repositórios embutidos (plugins baixados via git)
+zsh-autosuggestions/
+zsh-completions/
+zsh-syntax-highlighting/
