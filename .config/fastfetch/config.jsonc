@@ -13,82 +13,24 @@
   "modules": [
     "title",
     "separator",
-    {
-      "type": "custom",
-      "key": "OS",
-      "keyColor": "cyan",
-      "format": "One Ui 8.5"
-    },
-    {
-      "type": "host",
-      "key": "Host",
-      "keyColor": "cyan",
-      "format": "{name} {family}" // Ignora o "samsung" minúsculo e exibe "Samsung SM-A556E"
-    },
-    {
-      "type": "kernel",
-      "key": "Kernel",
-      "keyColor": "cyan",
-      "format": "{2}" // Pega apenas os primeiros 7 caracteres da versão (6.1.157)
-    },
-    {
-      "type": "uptime",
-      "key": "Uptime",
-      "keyColor": "cyan"
-    },
-    {
-      "type": "packages",
-      "key": "Packages",
-      "keyColor": "cyan" // Sem format para evitar o bug do "0"
-    },
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
     {
       "type": "shell",
       "key": "Shell",
       "keyColor": "cyan",
-      "format": "{1}" // Mostra apenas "zsh"
+      "format": "{1}" // Mostra apenas o nome (ex: "zsh", "bash")
     },
-    {
-      "type": "terminal",
-      "key": "Terminal",
-      "keyColor": "cyan",
-      "format": "Termux" // Força o nome "Termux" limpo, sem pacotes/versões no meio
-    },
-    {
-      "type": "cpu",
-      "key": "CPU",
-      "keyColor": "cyan",
-      "format": "{1~0,19}" // Recorta exatamente "Samsung Exynos 1480" (19 caracteres)
-    },
-    {
-      "type": "gpu",
-      "key": "GPU",
-      "keyColor": "cyan",
-      "format": "{name~8,-1}" // Sua fórmula original para a GPU
-    },
-    {
-      "type": "memory",
-      "key": "Memory",
-      "keyColor": "cyan",
-      "format": "{1} / {2}" // Remove a porcentagem do final
-    },
-    {
-      "type": "disk",
-      "key": "Disk",
-      "keyColor": "cyan",
-      "folders": "/data", // Foca apenas na partição interna do seu celular
-      "format": "{1} / {2}" // Mostra "Uso / Total" sem poluição
-    },
-    {
-      "type": "localip",
-      "key": "Local IP",
-      "keyColor": "cyan",
-      "format": "{1~0,-3}" // Remove os últimos 3 caracteres (o "/24") dinamicamente
-    },
-    {
-      "type": "locale",
-      "key": "Locale",
-      "keyColor": "cyan"
-    },
+    "terminal",
+    "cpu",
+    "gpu",
+    "memory",
+    "disk",
+    "localip",
+    "locale",
     {
       "type": "colors",
       "symbol": "circle"
