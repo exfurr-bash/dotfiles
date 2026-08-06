@@ -3,10 +3,10 @@
 # ==========================================
 
 # ─── 1. Environment Variables & Settings ───────────────────────────
-export GALLIUM_DRIVER="zink"
+# export GALLIUM_DRIVER="zink" not everybody uses zink
 export DISPLAY=":0"
-export EDITOR="nvim"
-export PAGER="less -R"
+export EDITOR="nano" # how to exit vim :((((
+export PAGER="cat" # bat is annoying
 export BAT_THEME="tokyonight_night"
 
 # Adiciona ~/.opencode/bin ao PATH com segurança
@@ -49,7 +49,7 @@ alias emdepclean="sudo emerge --depclean"
 
 # Aliases de Usuário
 alias lime='haxelib run lime'
-alias opencode='glibc-runner "$HOME/.opencode/bin/opencode"' # Corrigido para não usar caminho do Termux
+# alias opencode='glibc-runner "$HOME/.opencode/bin/opencode"' # what if someone do not use termux
 
 # Modern CLI Replacements
 if command -v eza &>/dev/null; then
